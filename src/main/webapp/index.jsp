@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
 <html>
 <head>
-    <title>DevOps CI/CD Demo</title>
+    <title>DevOps CI/CD Demo App</title>
 </head>
 <body>
 
