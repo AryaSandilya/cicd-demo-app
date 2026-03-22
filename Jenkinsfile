@@ -1,0 +1,38 @@
+pipeline {
+    agent any
+
+    tools {
+        maven 'Maven'
+        jdk 'JDK-21'
+    }
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+               git branch: 'main', url:'https://github.com/AryaSandilya/cicd-demo-app.git'
+            }
+        }
+
+        stage('Build WAR') {
+            steps {
+                bat 'mvn clean package'
+            }
+        }
+        
+        
+        stage('Build Docker Image') {
+            steps {
+                bat 'docker build -t cicd-app .'
+            }
+        }
+
+        stage('Run Container') {
+            steps {
+                bat 'docker stop cicd-container || exit 0'
+                bat 'docker rm cicd-container || exit 0'
+                bat 'docker run -d -p 8082:8080 --name cicd-container cicd-app'
+            }
+        }
+    }
+}
