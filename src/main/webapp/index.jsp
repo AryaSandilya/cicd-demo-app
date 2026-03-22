@@ -7,7 +7,7 @@
 
 <h1>Welcome Rahul Raj 🚀 - Version 1.1</h1>
 
-<p>This is a CI/CD pipeline demo using Jenkins</p>
+<p>This is a CI/CD pipeline demo using Jenkins Automation</p>
 
 </body>
 </html>
