@@ -40,5 +40,12 @@ pipeline {
 		        bat 'docker push rahulraj41/cicd-app:latest'
 		    }
 		}
+		stage('Deploy to Kubernetes') {
+		    steps {
+		        bat 'kubectl apply -f deployment.yaml'
+		        bat 'kubectl apply -f service.yaml'
+		        bat 'kubectl rollout restart deployment cicd-app'
+		    }
+		}
     }
 }
