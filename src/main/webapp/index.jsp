@@ -55,7 +55,7 @@
 
     <header class="hero-section">
         <div>
-            <h1 class="display-2 fw-bold">Adventure Awaits You Here!</h1>
+            <h1 class="display-2 fw-bold">Adventure Awaits You Here!Innovation Guaranteed!</h1>
             <p class="lead">Discover the world's most beautiful hidden gems with our expert guides.</p>
             <a href="#destinations" class="btn btn-primary btn-lg mt-3">Start Exploring</a>
         </div>
