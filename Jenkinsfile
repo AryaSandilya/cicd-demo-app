@@ -34,5 +34,11 @@ pipeline {
                 bat 'docker run -d -p 8082:8080 --name cicd-container cicd-app'
             }
         }
+        stage('Push to DockerHub') {
+		    steps {
+		        bat 'docker tag cicd-app rahulraj41/cicd-app:latest'
+		        bat 'docker push rahulraj41/cicd-app:latest'
+		    }
+		}
     }
 }
