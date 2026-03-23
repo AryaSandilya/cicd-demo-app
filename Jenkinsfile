@@ -48,9 +48,10 @@ pipeline {
 		    }
 		}
 		stage('Deploy to Kubernetes') {
-		    steps {
+            steps {
 		        bat 'kubectl set image deployment/cicd-app cicd-app=rahulraj41/cicd-app:latest'
 		    }
 		}
+		
     }
 }
