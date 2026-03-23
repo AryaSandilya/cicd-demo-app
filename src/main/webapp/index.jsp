@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlobeTrotter | Explore the New World with US | Innovation Guaranteed!</title>
+    <title>GlobeTrotter | Explore the New World with US </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .hero-section {
@@ -55,7 +55,7 @@
 
     <header class="hero-section">
         <div>
-            <h1 class="display-2 fw-bold">Adventure Awaits You Here!Innovation Guaranteed!</h1>
+            <h1 class="display-2 fw-bold">Adventure Awaits You Here!</h1>
             <p class="lead">Discover the world's most beautiful hidden gems with our expert guides.</p>
             <a href="#destinations" class="btn btn-primary btn-lg mt-3">Start Exploring</a>
         </div>
