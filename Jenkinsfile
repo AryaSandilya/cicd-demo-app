@@ -47,7 +47,7 @@ pipeline {
 		        bat 'kubectl rollout restart deployment cicd-app'
 		    }
 		}
-		stage('Deploy to Kubernetes') {
+		stage('Deploy to Kubernetes Automatic') {
             steps {
 		        bat 'kubectl set image deployment/cicd-app cicd-app=rahulraj41/cicd-app:latest'
 		    }
